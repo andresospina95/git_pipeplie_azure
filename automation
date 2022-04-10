@@ -1,0 +1,4 @@
+	l= "!f() { git add $GIT_PREFIX//$1 && git commit -m 'Added '$1' to /Pendientes'  && git push && \
+	az devops configure --defaults organization=https://rentingcolombia.visualstudio.com/ project="CambiosDatos" && \
+	az repos pr create --auto-complete true  --source-branch cambios/aospinam --repository CDLocaliza  --description "Added_"$1"_to_/Pendientes" --title "Added_"$1"_to_/Pendientes"\
+	;}; f"
